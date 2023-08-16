@@ -15,10 +15,10 @@ const Projects = () => {
                     
                     <p>{project.desc}</p>   
                     <div className="buttons">
-                        <a href={project.link}>
+                        <a href={project.link} target='_blank' rel='noreferrer'>
                             <button class="card__button">Ver Proyecto</button>
                         </a>
-                        <a href={project.repo}>
+                        <a href={project.repo} target='_blank' rel='noreferrer'>
                             <button class="card__button">Ver Repositorio</button>
                         </a>
                     </div>
