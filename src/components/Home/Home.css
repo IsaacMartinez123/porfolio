@@ -1,0 +1,166 @@
+.about-Cointainer{
+    margin: 5ch;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.text-about{
+    margin-left: 10ch;
+    margin-right: 10ch;
+}
+
+.text-about hr {
+    width: 44%;
+    height: 3px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: 50px;
+    border-color: #CCCCCC;
+    background-color: #CCCCCC;
+}
+
+.text-about h1 {
+    color: #FFFFFF;
+    font-size: 6ch;   
+}
+
+.text-about h2 {
+    color: #CCCCCC;   
+    font-size: 4ch; 
+}
+
+.text-about p{
+    color: #CCCCCC;
+    font-size: 2.2ch;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+/* .about-Cointainer img {
+    border-radius: 80%;
+    height: 45ch;
+    width: 45ch;
+    object-fit: cover;
+    margin-left: 5ch;
+    border: 8px outset #C0C0C0;
+} */
+
+.container {
+    height: 70ch;
+    width: 112rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -90px;
+}
+
+.box {
+    width: 40vmin;
+    height: 38vmin;
+    border: 1px dashed rgba(255,255,255,0.4);
+    position: relative;
+    
+    &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    border: 1px dashed rgba(255,255,255,0.4);
+    transform: scale(1.42);
+    }
+}
+
+.spin-container {
+    width: 100%;
+    height: 100%;
+    animation: spin 12s ease-in-out infinite alternate;
+    position: relative;
+}
+
+.shape {
+    width: 100%;
+    height: 100%;
+    transition: border-radius 1s ease-out;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: morph 8s ease-in-out infinite both alternate;
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.bd {
+    width: 142%;
+    height: 142%;
+    position: absolute;
+    left: -21%;
+    top: -21%;
+    background: url(../../../public/images/foto_perfil.jpg ) no-repeat ;
+    background-size: 100%;
+    background-position: center center;
+    animation: spin 12s ease-in-out infinite alternate-reverse;
+    opacity: 1;
+    z-index: 2;
+}
+
+@keyframes morph {
+    0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} 
+    100% {border-radius: 40% 60%;} 
+}
+
+@keyframes spin {
+    to {
+    transform: rotate(1turn);
+    }
+}
+
+.skills h1{
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 4ch;
+    margin-bottom: 4%;
+    font-size: 4ch;
+    font-weight: 800;
+}
+
+.divisor{
+    margin-bottom: 13rem;
+}
+
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3d3b3b;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-to-top-button:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333333; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888; 
+}

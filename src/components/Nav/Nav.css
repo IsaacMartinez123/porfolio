@@ -1,0 +1,98 @@
+nav{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 35%);
+    padding: 7px;
+    height: 130px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2ch;
+    margin-right: 4rem;
+}
+
+.button-container :hover {
+    cursor: pointer;
+}
+
+.button-contac{
+    background-color: transparent;
+    border: none;
+    margin: 1ch;
+}
+
+
+.cv-download li {
+    width: 9rem !important;
+}
+
+.horizontal-list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.horizontal-list a {
+    text-decoration: none;
+}
+
+.horizontal-list li {
+    font-size: 2ch;
+    width: 8rem;
+    height: 1.8em;
+    color: #CCCCCC;
+    border-left: 0.08em solid;
+    position: relative;
+    margin-right: 100px;
+    margin-top: -6px;
+    cursor: pointer;
+}
+
+.horizontal-list li::before,
+.horizontal-list li::after
+{
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: inherit;
+    z-index: -1;
+}
+
+.horizontal-list li::before {
+    height: 80%;
+    top: 10%;
+    left: calc(-0.15em - 0.08em * 2);
+    filter: brightness(0.8);
+}
+
+.horizontal-list li::after {
+    height: 60%;
+    top: 20%;
+    left: calc(-0.15em * 2 - 0.08em * 3);
+    filter: brightness(0.6);
+}
+
+.horizontal-list li span {
+    position: relative;
+    height: 120%;
+    top: -10%;
+    box-sizing: border-box;
+    border: 0.08em solid;
+    border-radius: 10px;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+    transition: 0.3s;
+}
+
+.horizontal-list li:hover span {
+    transform: translateX(0.15em);
+}

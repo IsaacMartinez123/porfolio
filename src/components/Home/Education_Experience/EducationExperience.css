@@ -1,0 +1,76 @@
+.educationsExperiences {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.educationExperience {
+    background-color: #001F3F;
+    padding-inline-start: 3ch;
+    padding-right: 3ch;
+    width: 73ch;
+    border-radius: 30px;
+    color: #CCCCCC;
+    margin-bottom: 2rem;
+}
+
+.educationsExperiences :hover {
+    cursor: pointer;
+    background-color: #082c50;
+}
+
+.educationExperience h3 {
+    color: #3498DB;
+}
+
+.educationExperience h2 {
+    font-size: 22.4px;
+}
+
+.educationExperience a {
+    text-decoration: none;
+    color: #3498DB;
+    font-size: 0.9rem;
+}
+
+.educationExperience p {
+    font-weight: bold;
+    color: #3498DB;
+}
+
+.educationExperience ul li {
+    font-weight: bold;
+    margin-bottom: 1ch;
+}
+
+.resposbilidades{
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.tecnologias{
+    display: flex;
+}
+
+.tecnologia {
+    margin-right: 4rem;
+    font-weight: bold;
+}
+
+.diamond-item {
+    position: relative;
+    list-style: none;
+    padding-left: 1.6em; /* Espacio para el contenido del diamante */
+}
+  
+  .diamond-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 0.6em; /* Tamaño del diamante */
+    height: 0.6em; /* Tamaño del diamante */
+    background-color: #3498DB; /* Cambia esto al color deseado */
+    transform: rotate(45deg);
+  }
