@@ -27,10 +27,6 @@ html {
 }
 
 
-.cv-download li {
-    width: 9rem !important;
-}
-
 .horizontal-list{
     display: flex;
     list-style: none;
@@ -43,12 +39,12 @@ html {
 
 .horizontal-list li {
     font-size: 2ch;
-    width: 8rem;
+    width: 9rem;
     height: 1.8em;
     color: #CCCCCC;
     border-left: 0.08em solid;
     position: relative;
-    margin-right: 100px;
+    margin-right: 20px;
     margin-top: -6px;
     cursor: pointer;
 }
@@ -95,4 +91,50 @@ html {
 
 .horizontal-list li:hover span {
     transform: translateX(0.15em);
+}
+
+@media (max-width: 1038px) {
+    nav {
+        height: auto;
+    }
+
+    .button-container {
+        margin-right: 2rem; 
+    }
+
+    .menu-button {
+        display: block; 
+        margin: 1rem auto;
+        margin-left: 0;
+        margin-top: -1px;
+    }
+
+    .horizontal-list {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        max-height: 0; 
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .horizontal-list.active {
+        max-height: 1000px;
+    }
+
+    .horizontal-list li {
+        margin-right: 0; 
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 1039px) {
+    .menu-button {
+        display: none;
+    }
+
+    .horizontal-list {
+        max-height: none;
+    }
 }

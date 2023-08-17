@@ -11,8 +11,8 @@
 }
 
 .text-about hr {
-    width: 44%;
-    height: 3px;
+    width: 38ch;
+    height: 2px;
     margin: 0;
     margin-top: -10px;
     margin-bottom: 50px;
@@ -22,33 +22,25 @@
 
 .text-about h1 {
     color: #FFFFFF;
-    font-size: 6ch;   
+    font-size: 4ch;   
 }
 
 .text-about h2 {
     color: #CCCCCC;   
-    font-size: 4ch; 
+    font-size: 3ch; 
 }
 
 .text-about p{
     color: #CCCCCC;
-    font-size: 2.2ch;
+    font-size: 2ch;
     font-weight: bolder;
     text-align: justify;
 }
 
-/* .about-Cointainer img {
-    border-radius: 80%;
-    height: 45ch;
-    width: 45ch;
-    object-fit: cover;
-    margin-left: 5ch;
-    border: 8px outset #C0C0C0;
-} */
 
 .container {
-    height: 70ch;
-    width: 112rem;
+    height: 63ch;
+    width: 119em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,8 +49,8 @@
 }
 
 .box {
-    width: 40vmin;
-    height: 38vmin;
+    width: 50ch;
+    height: 37ch;
     border: 1px dashed rgba(255,255,255,0.4);
     position: relative;
     
@@ -117,6 +109,62 @@
     transform: rotate(1turn);
     }
 }
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 1384px) {
+    .about-Cointainer {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 2ch;
+    }
+
+    .text-about {
+        margin: 2rem;
+        text-align: center;
+    }
+
+    .text-about hr {
+        width: 38ch;
+        margin: 1rem auto;
+    }
+
+    .text-about h1 {
+        font-size: 4ch;
+    }
+
+    .text-about h2 {
+        font-size: 3ch;
+    }
+
+    .text-about p {
+        font-size: 2ch;
+    }
+
+    .container {
+        height: auto;
+        width: 90vw;
+        max-width: 950px; /* Ajusta este valor según tu diseño */
+        margin: 1rem auto;
+    }
+
+    .box {
+        width: 60vmin;
+        height: 38vmin;
+    }
+
+    .bd {
+        width: 90%;
+        height: 90%;
+        left: 5%;
+        top: 5%;
+    }
+
+    .shape {
+        border-radius: 40% 60%;
+    }
+}
+
 
 .skills h1{
     text-align: center;
