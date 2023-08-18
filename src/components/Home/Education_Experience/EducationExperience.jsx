@@ -9,7 +9,7 @@ const EducationExperience = () => {
             <div className="educationExperience">
                 <p>Enero 2021 - Enero 2023</p>
                 <h2>Tecnólogo en análisis y desarrollo de sistemas de información</h2>
-                <a href="https://www.sena.edu.co/es-co/Paginas/default.aspx">
+                <a href="https://www.sena.edu.co/es-co/Paginas/default.aspx" target='_blank' rel='noreferrer'>
                     <h3>www.sena.edu.co</h3>
                 </a>
             </div>
@@ -17,7 +17,7 @@ const EducationExperience = () => {
             <div className="educationExperience">
                 <p>Marzo 2023 - Julio 2023</p>
                 <h2>Desarrollador Full Stack</h2>
-                <a href="https://www.soyhenry.com">
+                <a href="https://www.soyhenry.com" target='_blank' rel='noreferrer'>
                     <h3>https://www.soyhenry.com</h3>
                 </a>
             </div>

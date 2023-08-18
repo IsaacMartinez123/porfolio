@@ -70,6 +70,10 @@
         justify-content: space-around;
     }
 
+    .buttons :hover{
+        cursor: pointer;
+    }
+
     .card__button {
         padding: 0.75em 1em;
         width: fit-content;
@@ -148,3 +152,53 @@
         transition-delay: 500ms;
         }
     }
+
+    /* Mantén el estilo existente */
+
+/* Media query para pantallas pequeñas y medianas */
+@media (max-width: 1466px) {
+    .Projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        margin-bottom: 2rem; /* Aumenta el margen inferior */
+    }
+
+    .card__background {
+        height: 300px; /* Ajusta la altura */
+    }
+
+    .card__content {
+        padding: 10% 1.25rem; /* Ajusta los valores de padding */
+        height: auto; /* Cambia la altura a auto para adaptarse al contenido */
+        padding-top: 18%;
+    }
+
+    .card__content p {
+        font-size: 0.9rem; /* Reduce el tamaño de fuente */
+    }
+
+    .card__title {
+        font-size: 1.2rem; /* Reduce el tamaño de fuente */
+    }
+
+    .card__title::after {
+        bottom: calc(0.2rem * -1); /* Ajusta la posición */
+    }
+
+    .buttons {
+        flex-direction: column; /* Cambia la dirección de los botones a columna */
+        gap: 1rem; /* Añade un espacio entre los botones */
+    }
+
+    .card__button {
+        width: 100%; /* Ajusta el ancho al 100% */
+    }
+
+    /* Restaura los estilos y transiciones de interacción a continuación */
+
+    /* Añade aquí tus estilos y transiciones previamente existentes para las interacciones */
+}
