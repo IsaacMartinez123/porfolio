@@ -27,11 +27,14 @@ const Nav = () => {
                         <Link to='skills' smooth={true} duration={500}>
                             <li><span>Habilidades</span></li>
                         </Link>
+                        <Link to='experience' smooth={true} duration={500}>
+                            <li><span>Experiencia</span></li>
+                        </Link>
                         <Link to='education' smooth={true} duration={500}>
                             <li><span>Educacion</span></li>
                         </Link>
-                        <Link to='experience' smooth={true} duration={500}>
-                            <li><span>Experiencia</span></li>
+                        <Link to='contacme' smooth={true} duration={500}>
+                            <li><span>Contacto</span></li>
                         </Link>
                     </ul>
                 
@@ -59,11 +62,14 @@ const Nav = () => {
                     <Link to='skills' smooth={true} duration={500}>
                         <li><span>Habilidades</span></li>
                     </Link>
+                    <Link to='experience' smooth={true} duration={500}>
+                        <li><span>Experiencia</span></li>
+                    </Link>
                     <Link to='education' smooth={true} duration={500}>
                         <li><span>Educacion</span></li>
                     </Link>
-                    <Link to='experience' smooth={true} duration={500}>
-                        <li><span>Experiencia</span></li>
+                    <Link to='contacme' smooth={true} duration={500}>
+                        <li><span>Contacto</span></li>
                     </Link>
                 </ul>
                 }

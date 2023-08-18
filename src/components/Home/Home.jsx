@@ -3,6 +3,7 @@ import Carousel from './Carousel/Carousel';
 import Projects from './Projects/Projects';
 import EducationExperience from './Education_Experience/EducationExperience';
 import Divisor from './Divisor/Divisor';
+import Contacme from './Contacme/Contacme'
 import { Link } from 'react-scroll';
 
 const Home = () => {
@@ -37,6 +38,7 @@ const Home = () => {
             </div>
             <Carousel/>
             <EducationExperience/>
+            <Contacme/>
         </div>
         <div className="scroll-to-top-button">
         <Link to="top" smooth={true} duration={500}>

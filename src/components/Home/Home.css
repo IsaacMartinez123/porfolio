@@ -51,7 +51,7 @@
 .box {
     width: 50ch;
     height: 37ch;
-    border: 1px dashed rgba(255,255,255,0.4);
+    border: 1px dashed #CCCCCC;
     position: relative;
     
     &::before {
@@ -62,7 +62,7 @@
     bottom: 0;
     right: 0;
     border-radius: 50%;
-    border: 1px dashed rgba(255,255,255,0.4);
+    border: 1px dashed #CCCCCC;
     transform: scale(1.42);
     }
 }
