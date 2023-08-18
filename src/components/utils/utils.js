@@ -41,9 +41,9 @@ export const images = [
 
 export const names = [
     'PostgreSQL',
-    'Express js',
-    'React js',
-    'Node js',
+    'Express',
+    'React',
+    'Node',
     'Laravel',
     'Flutter',
     'MySQL',

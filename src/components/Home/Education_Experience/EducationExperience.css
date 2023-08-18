@@ -9,7 +9,7 @@
     background-color: #001F3F;
     padding-inline-start: 3ch;
     padding-right: 3ch;
-    width: 73ch;
+    width: 70ch;
     border-radius: 30px;
     color: #CCCCCC;
     margin-bottom: 2rem;
@@ -61,16 +61,43 @@
 .diamond-item {
     position: relative;
     list-style: none;
-    padding-left: 1.6em; /* Espacio para el contenido del diamante */
+    padding-left: 1.6em;
 }
-  
-  .diamond-item::before {
+
+.diamond-item::before {
     content: '';
     position: absolute;
     left: 0;
     top: 0.25em;
-    width: 0.6em; /* Tamaño del diamante */
-    height: 0.6em; /* Tamaño del diamante */
-    background-color: #3498DB; /* Cambia esto al color deseado */
+    width: 0.6em;
+    height: 0.6em;
+    background-color: #3498DB;
     transform: rotate(45deg);
-  }
+}
+
+/* Mantener el estilo existente */
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 820px) {
+    .educationsExperiences {
+        flex-direction: column; /* Cambiamos a dirección de columna */
+        align-items: center; /* Centramos los elementos horizontalmente */
+    }
+
+    .educationExperience {
+        display: flex; /* Cambiamos el valor a flex */
+        flex-direction: column; /* Cambiamos a dirección de columna */
+        margin-bottom: 1rem; /* Reducimos el margen inferior */
+        width: 70%;
+    }
+
+    .tecnologias {
+        flex-direction: column; /* Cambiamos a dirección de columna */
+        align-items: center; /* Centramos los elementos horizontalmente */
+    }
+
+    .tecnologia {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
