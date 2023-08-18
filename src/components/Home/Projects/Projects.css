@@ -174,11 +174,11 @@
     .card__content {
         padding: 10% 1.25rem; /* Ajusta los valores de padding */
         height: auto; /* Cambia la altura a auto para adaptarse al contenido */
+        padding-top: 10%;
     }
 
     .card__content p {
         padding-top: 10%;
-        margin-bottom: 10%;
         font-size: 0.9rem; /* Reduce el tamaño de fuente */
     }
 
