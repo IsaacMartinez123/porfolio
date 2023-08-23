@@ -137,4 +137,10 @@ html {
     .horizontal-list {
         max-height: none;
     }
+
+    .horizontal-list.active {
+        max-height: 0; 
+        overflow: hidden;
+        
+    }
 }

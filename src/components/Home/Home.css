@@ -111,7 +111,6 @@
 }
 
 
-/* Media query para pantallas pequeñas */
 @media (max-width: 1384px) {
     .about-Cointainer {
         flex-direction: column;
