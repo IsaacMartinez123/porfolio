@@ -1,21 +1,25 @@
+import picountries from './picontries.png';
+import rym from './rym.png';
+import sangaltec from './sangaltec.png';
+
 export const projects = [
     {
         name: 'PI Countries', 
-        img: 'https://i.ibb.co/Czck6Bv/imagen-2023-07-31-164237324.png', 
+        img: picountries, 
         desc: 'SPA que consume la API "REST COUNTRIES" a través del Backend, agregando nuevas funcionalidades, tales como caché de búsquedas, ordenamientos y filtros apilados, formulario para asociar una actividad a uno o más países de la API.',
         link: 'https://www.youtube.com/watch?v=h-5PB1mmAQU',
         repo: 'https://github.com/IsaacMartinez123/PI_Countries.git'
     },
     {
         name: 'Rick & Morty', 
-        img: 'https://i.ibb.co/7rckRjw/imagen-2023-07-31-170630077.png', 
+        img: rym, 
         desc: 'SPA que consume la API "The Rick and Morty API" a través del Backend, agregando nuevas funcionalidades, tales como caché de búsqueda, ordenamientos y filtros, sesión de favoritos y un formulario para iniciar sesión.',
-        link: 'https://www.youtube.com/watch?v=ZAIzO16xmNw',
-        repo: 'https://github.com/IsaacMartinez123/Rick_and_Morty.git'
+        link: '',
+        repo: ''
     },
     {
         name: 'SangalTec', 
-        img: 'https://i.ibb.co/pj7mtRL/sangal.png', 
+        img: sangaltec, 
         desc: 'El software mejora la gestión de existencias y ventas con autenticación de usuarios, informes detallados, alertas de stock y roles con permisos definidos. Organiza productos en categorías para fácil consulta.',
         link: 'https://youtu.be/L86cfQxCk_g',
         repo: 'https://github.com/DavidArenasPalacio/SangalTecLaravel.git'
@@ -55,6 +59,3 @@ export const names = [
     'GitHub',
     'Figma',
 ] 
-
-
-// El software optimiza la gestión de existencias, compras y ventas de productos, con autenticación de inicio de sesión para administradores o empleados. Ofrece informes detallados de compras/ventas y emite alertas de stock agotado. Con roles de usuario definidos, garantiza permisos adecuados. Además, organiza productos en categorías para consultar fácilmente la información del mismo.

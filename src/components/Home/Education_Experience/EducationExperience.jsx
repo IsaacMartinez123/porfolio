@@ -8,7 +8,7 @@ const EducationExperience = () => {
         <div className="educationsExperiences">
             <div className="educationExperience">
                 <p>Junio 2023 - Julio 2023</p>
-                <h2>Desarrollador Movil - Silver Express</h2>
+                <h2>Desarrollador Movil - Deep Skill Academy, Lima, Peru</h2>
                 <div className="tecnologias">
                     <div className="tecnologia">
                         <h3>FrontEnd</h3>
@@ -49,7 +49,7 @@ const EducationExperience = () => {
 
             <div className="educationExperience">
                 <p>Diciembre 2021 - Julio 2022</p>
-                <h2>[Academica] Desarrollador Full Stack - SangalTec</h2>
+                <h2>Desarrollador Web - Sangal, Medellín, Colombia</h2>
                 <div className="tecnologias">
                     <div className="tecnologia">
                         <h3>FrontEnd</h3>
